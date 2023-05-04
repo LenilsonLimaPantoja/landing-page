@@ -113,9 +113,15 @@
     <div class="wrapper">
       <section
         class="module parallax"
-        data-background="assets/img/consultoria.jpg"
-        style="background-size: cover"
-        data-overlay="0.5"
+        style="
+          background-image: linear-gradient(
+              to bottom,
+              #000,
+              rgba(255, 255, 255, 0.5)
+            ),
+            url(assets/img/consultoria.jpg);
+            background-size: cover;
+        "
       >
         <div class="container">
           <div class="row">
@@ -391,7 +397,7 @@
 
       <section
         class="module"
-        style="background-image: url(assets/img/contato.jpg);"
+        style="background-image: url(assets/img/contato.jpg)"
         data-overlay="0"
       >
         <div class="container">
