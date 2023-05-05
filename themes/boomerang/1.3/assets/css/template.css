@@ -12955,7 +12955,7 @@ img.img-shadow,
 }
 
 .header.header-transparent {
-  background: transparent;
+  background: #fff;
   border-bottom: red;
 }
 
@@ -12973,10 +12973,6 @@ img.img-shadow,
 
 .header.header-transparent .extra-nav > ul > li > a,
 .header.header-transparent .inner-nav > ul > li > a {
-  color: #fff;
-}
-.header.header-transparent .extra-nav > ul > li > .a_preto,
-.header.header-transparent .inner-nav > ul > li > .a_preto {
   color: #222222;
 }
 
@@ -12984,13 +12980,6 @@ img.img-shadow,
 .header.header-transparent .extra-nav > ul > li > a.active,
 .header.header-transparent .inner-nav > ul > li > a:hover,
 .header.header-transparent .inner-nav > ul > li > a.active {
-  color: rgba(255, 255, 255, 0.7);
-}
-
-.header.header-transparent .extra-nav > ul > li > .a_preto:hover,
-.header.header-transparent .extra-nav > ul > li > .a_preto.active,
-.header.header-transparent .inner-nav > ul > li > .a_preto:hover,
-.header.header-transparent .inner-nav > ul > li > .a_preto.active {
   color: rgba(0, 0, 0, 0.7);
 }
 
@@ -13007,7 +12996,7 @@ img.img-shadow,
 
 .header.header-transparent .inner-nav > ul > li > a::after {
   position: absolute;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(0, 0, 0, 0.8);
   display: block;
   height: 1px;
   width: 20px;
