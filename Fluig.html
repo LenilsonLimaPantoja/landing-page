@@ -46,16 +46,16 @@
     crossorigin="anonymous"
   ></script>
   <body>
-    <!-- <div class="page-loader">
+    <div class="page-loader">
       <div class="page-loader-inner">
         <div class="spinner">
           <div class="double-bounce1"></div>
           <div class="double-bounce2"></div>
         </div>
       </div>
-    </div> -->
+    </div>
 
-    <header class="header header-transparent">
+    <header class="header header-transparent" style="background-color: #fff">
       <div class="container-fluid">
         <div class="inner-header">
           <a class="inner-brand" href="index.html">
@@ -70,27 +70,29 @@
           <div class="inner-nav">
             <ul>
               <li class="menu-item-has-mega-menu">
-                <a href="/ConsultoriaERP.html"
+                <a class="a_preto" href="/ConsultoriaERP.html"
                   ><span class="menu-item-span"
                     >Consultoria e Soluções em ERP</span
                   ></a
                 >
               </li>
               <li class="menu-item-has-mega-menu">
-                <a href="#"
+                <a class="a_preto" href="#"
                   ><span class="menu-item-span">Business Inteligence</span></a
                 >
               </li>
               <li class="menu-item-has-children">
-                <a href="#"
+                <a class="a_preto" href="#"
                   ><span class="menu-item-span">Fábrica de Software</span></a
                 >
               </li>
               <li class="menu-item-has-children">
-                <a href="#"><span class="menu-item-span">Contato</span></a>
+                <a class="a_preto" href="#"
+                  ><span class="menu-item-span">Contato</span></a
+                >
               </li>
               <li class="menu-item-has-children">
-                <a href="#"
+                <a class="a_preto" href="#"
                   ><span class="menu-item-span">Trabalhe conosno</span></a
                 >
               </li>
@@ -111,171 +113,127 @@
     </header>
 
     <div class="wrapper">
-      <section
-        class="module parallax"
-        style="
-          background-image: linear-gradient(
-              to bottom,
-              #000,
-              rgba(255, 255, 255, 0.5)
-            ),
-            url(assets/img/consultoria.jpg);
-          background-size: cover;
-        "
-      >
+      <section class="module" id="contact">
         <div class="container">
           <div class="row">
-            <div class="col-md-7">
-              <h1>
-                <strong>Consultoria especializada em sistemas TOTVS</strong>
-              </h1>
-            </div>
-            <div class="col-md-7">
-              <p>
-                A TRIYo possui melhor e mais experiente equipe de consultores
+            <div class="col-lg-6 col-md-6 m-auto text-left">
+              <img src="assets/img/fluig.png" />
+
+              <h1>Consultoria Especializada Fluig</h1>
+              <p class="lead">
+                A TRIYO possui a melhor e mais experiente equipe de consultores
                 especializados e certificados nas soluções TOTVS, com atuação
-                destacada em projetos de alta complexidade de empresas de
-                diversos portes, nos seguimentos de:
+                destacada em projeto de alta complexidade de empresas de
+                diversos portes, no segmento de Fluig
               </p>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="module">
-        <div class="container">
-          <div
-            class="row"
-            style="
-              justify-content: center;
-              align-items: center;
-              column-gap: 15px;
-              row-gap: 20px;
-            "
-          >
-            <a
-              class="col-md-3"
-              style="
-                position: relative;
-                display: flex;
-                justify-content: center;
-                flex-direction: column;
-                cursor: pointer;
-              "
-              href="MicroSigaProteus.html"
-            >
-              <img src="assets/img/microsiga.jpg" alt="" />
-              <h5
-                style="
-                  text-align: center;
-                  width: 100%;
-                  position: absolute;
-                  z-index: 10;
-                  bottom: 10px;
-                  left: 0px;
-                  color: #fff;
-                "
-              >
-                Microsiga Protheus
-              </h5>
-            </a>
-
-            <a
-              class="col-md-3"
-              style="
-                position: relative;
-                display: flex;
-                justify-content: center;
-                flex-direction: column;
-                cursor: pointer;
-              "
-              href="Fluig.html"
-            >
-              <img src="assets/img/fluig.jpg" alt="" />
-              <h5
-                style="
-                  text-align: center;
-                  width: 100%;
-                  position: absolute;
-                  z-index: 10;
-                  bottom: 10px;
-                  left: 0px;
-                  color: #fff;
-                "
-              >
-                Fluig
-              </h5>
-            </a>
+            <div class="space" data-MY="60px"></div>
+            <div class="col-md-6 m-auto">
+              <form id="contact-form" method="post" novalidate>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input
+                        class="form-control"
+                        type="text"
+                        name="nome"
+                        placeholder="Nome"
+                        required=""
+                      />
+                      <p class="help-block text-danger"></p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input
+                        class="form-control"
+                        type="text"
+                        name="telefone"
+                        placeholder="Telefone"
+                        required=""
+                      />
+                      <p class="help-block text-danger"></p>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <input
+                        class="form-control"
+                        type="text"
+                        name="empresa"
+                        placeholder="Empresa"
+                        required=""
+                      />
+                      <p class="help-block text-danger"></p>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <input
+                        class="form-control"
+                        type="text"
+                        name="cargo"
+                        placeholder="Cargo"
+                        required=""
+                      />
+                      <p class="help-block text-danger"></p>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <input
+                        class="form-control"
+                        type="email"
+                        name="email"
+                        placeholder="E-mail"
+                        required=""
+                      />
+                      <p class="help-block text-danger"></p>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <input
+                        class="form-control"
+                        type="number"
+                        name="numero_funcionarios"
+                        placeholder="Número de funcionários"
+                        required=""
+                      />
+                      <p class="help-block text-danger"></p>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <textarea
+                        class="form-control"
+                        rows="5"
+                        placeholder="Sua mensagem"
+                      ></textarea>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <p>
+                      <input
+                        class="btn btn-block"
+                        type="submit"
+                        value="Falar com um consultor"
+                        style="background-color: #eb6639; color: #fff"
+                      />
+                    </p>
+                  </div>
+                </div>
+              </form>
+              <div
+                class="ajax-response text-center"
+                id="contact-response"
+              ></div>
+            </div>
           </div>
         </div>
       </section>
 
       <section class="module bg-gray">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-8 m-auto">
-              <div class="heading-underline">
-                <h5 class="m-b-30">Contato</h5>
-              </div>
-              <form>
-                <div class="row form-row">
-                  <div class="col-md-12 form-group">
-                    <input
-                      class="form-control"
-                      type="text"
-                      placeholder="Nome"
-                    />
-                  </div>
-                </div>
-                <div class="row form-row">
-                  <div class="col-md-12 form-group">
-                    <input
-                      class="form-control"
-                      type="text"
-                      placeholder="Telefone"
-                    />
-                  </div>
-                  <div class="col-md-12 form-group">
-                    <input
-                      class="form-control"
-                      type="text"
-                      placeholder="Empresa"
-                    />
-                  </div>
-                </div>
-                <div class="row form-row">
-                  <div class="col-md-12 form-group">
-                    <input
-                      class="form-control"
-                      type="text"
-                      placeholder="Cargo"
-                    />
-                  </div>
-                </div>
-                <div class="row form-row">
-                  <div class="col-md-12 form-group">
-                    <input
-                      class="form-control"
-                      type="email"
-                      placeholder="Email"
-                    />
-                  </div>
-                </div>
-                <div class="text-right">
-                  <a
-                    class="btn w-100"
-                    style="background-color: #eb6639; color: #fff"
-                    href="#"
-                    >enviar</a
-                  >
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="module">
         <div class="container">
           <div class="row m-b-40">
             <div class="col-md-12 text-center">
@@ -413,49 +371,6 @@
         </div>
       </section>
 
-      <section
-        class="module"
-        style="
-          background-image: linear-gradient(
-              to right,
-              #fff,
-              rgba(255, 255, 255, 0.2)
-            ),
-            url(assets/img/contato.jpg);
-        "
-        data-overlay="0"
-      >
-        <div class="container">
-          <div
-            class="row"
-            style="
-              justify-content: center;
-              flex-direction: column;
-              align-items: flex-end;
-            "
-          >
-            <div class="col-md-6">
-              <h1 style="color: #444444; text-align: center">
-                <strong>Gostaria de falar sobre seu próximo projeto?</strong>
-              </h1>
-            </div>
-            <div class="col-md-6 m-b-40">
-              <p style="color: #464646; text-align: center">
-                A TRIYO Certamente tem a melhor solução pra você! Entre em
-                contato conosco e surpreenda-se positivamente
-              </p>
-            </div>
-            <div class="text-center col-md-6">
-              <a
-                class="btn"
-                href="#"
-                style="background-color: #eb6639; color: #fff"
-                >Entrar em Contato</a
-              >
-            </div>
-          </div>
-        </div>
-      </section>
       <footer class="footer">
         <div class="footer-widgets">
           <div class="container">
